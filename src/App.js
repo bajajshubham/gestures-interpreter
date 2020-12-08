@@ -85,7 +85,7 @@ export default function App() {
 
   <div className="common-IO-display common-IO">
 
-  <span style={{fontSize:"1rem",marginLeft:".5rem"}}
+  <span style={{fontSize:"1rem",marginLeft:".5rem",cursor:"none"}}
     className="common-IO">Enter emoji here to see it's meaning</span>
 
   <input className="common-IO"
@@ -94,7 +94,7 @@ export default function App() {
         </input>
   {/* <span className="common-IO"> </span> */}
   <div  className="common-IO"       
-    style={{fontSize:"2rem"}}        >
+    style={{fontSize:"2rem",cursor:"none"}}        >
      {emoji}  {meaning}  
      
   </div> 
