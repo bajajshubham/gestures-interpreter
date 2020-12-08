@@ -1,0 +1,81 @@
+*
+{
+  margin:0;
+  padding: 0;
+}
+
+body
+{
+  background-color: grey;
+}
+
+.App {
+ font-family: 'Trebuchet MS';
+ line-height: 2rem;
+ margin: 1rem auto;
+ max-width: 600px;
+}
+
+.divHomeP
+{
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  text-align:justify;  
+  font-weight: bolder;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.strikeThrough
+{
+  text-decoration: line-through;
+  font-weight:lighter;
+  margin: 0rem .3rem;
+  padding:.5rem;
+}
+
+.decorateTxt
+{
+  background-color: grey;
+  color:rgba(255, 255, 255, 0.8); 
+  border: 1px solid;
+  border-radius: .3rem;
+}
+
+.common-IO-display
+{
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  padding: 0rem;
+
+}
+
+.common-IO
+{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 3rem;
+}
+
+.emojis-display
+{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  text-align: center;
+  width:100%;
+  padding: 20px 0;
+  font-size: 3rem;
+
+}
