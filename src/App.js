@@ -74,6 +74,7 @@ export default function App() {
     <p>
 
        
+
        Hey,<span className="strikeThrough">do you know</span> 
        you must have known about <span className="decorateTxt">BodyLanguage</span>, 
        which gets us to know about someone's emotions, feelings, and what they are thinking? 
@@ -83,6 +84,11 @@ export default function App() {
        To check, first, interpret an emoji in mind then click on that emoji 
        to see it's meaning, and you can also enter an emoji to know it's meaning.
 
+       Hey,<span className="strikeThrough">do you know</span> you must have known about <span className="decorateTxt">BodyLanguage</span>, which gets us to know about someone's emotions, feelings, and what they are thinking? I decided to master it, read about it from the internet, watched videos from youtube, or what possible. <span style={{textDecoration:"underline"}}>But there is a difference between REEL and REALITY.</span>  Thus,"I make this to teach-oneself about BodyLanguage." 
+       <br/>
+       To check, first, interpret an emoji in mind then click on that emoji to see it's meaning, and you can also enter an emoji to know it's meaning.
+
+
     </p>
 {/* */}
     
@@ -90,7 +96,7 @@ export default function App() {
 
   <div className="common-IO-display common-IO">
 
-  <span style={{fontSize:"1rem",marginLeft:".5rem"}}
+  <span style={{fontSize:"1rem",marginLeft:".5rem",cursor:"none"}}
     className="common-IO">Enter emoji here to see it's meaning</span>
 
   <input className="common-IO"
@@ -99,7 +105,7 @@ export default function App() {
         </input>
   {/* <span className="common-IO"> </span> */}
   <div  className="common-IO"       
-    style={{fontSize:"2rem"}}        >
+    style={{fontSize:"2rem",cursor:"none"}}        >
      {emoji}  {meaning}  
      
   </div> 
