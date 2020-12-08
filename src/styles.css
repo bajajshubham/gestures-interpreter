@@ -61,6 +61,7 @@ body
   width: 100%;
   padding: 20px 0;
   font-size: 3rem;
+  /* position: fixed; */
 }
 
 .emojis-display
