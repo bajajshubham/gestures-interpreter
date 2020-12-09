@@ -5,13 +5,15 @@ import "./styles.css";
 const gesturesDB = {
   
   "🙍" : "Frowning",
-  "🙎‍♂️" : "Pouting",
-  "🙅‍♀️" : "Gesturing No",
   "🙆" : "Gesturing Ok",
-  "💁‍♂️" : "Tripping Hand",
-  "🙋‍♀️" : "Raising Hand",
   "🙇" : "Bowing",
+  "🕴️":"Suit Levitating",
+  "🙎‍♂️" : "Pouting",
+  "💁‍♂️" : "Tripping Hand",
   "🤦‍♂️" : "Facepalming",
+  "🤷‍♂️" :"Shrugging",
+  "🙅‍♀️" : "Gesturing No",
+  "🙋‍♀️" : "Raising Hand",
   "🤷‍♀️" : "Struggling", 
   "👈" : "Pointing Left",
   "🖖" : "Vulcan salute",
@@ -21,8 +23,6 @@ const gesturesDB = {
   "🤘" :"Sign of the Horns",
   "🤙" :"Call me Hand",
   "👆" :"Pointing Up",
-  "🤷‍♂️" :"Shrugging",
-  "🕴️":"Suit Levitating",
   "😟":"Worried",
   "😯":"Hushed",
   "😀":"Grinning",
@@ -47,16 +47,19 @@ export default function App() {
 
   function getEmojiMeaning(event)
   {
-      
+    var emoji = event.target.value ;
+   
 
-      if(event.target.value in gesturesKeys)
+      if (emoji in gesturesDB)
       {
+        // console.log("yes",emoji);
         setEmoji(event.target.value);
         setMeaning(gesturesDB[event.target.value]);
       }
       else{
+        // console.log(emoji);
         setEmoji("");
-        setMeaning("Not having Meaning");
+        setMeaning("Not Found");
       }
   }
 
@@ -69,30 +72,24 @@ export default function App() {
   return (
     <div className="App">
     
-    <div className="divHomeP">
+    <div className="divHomeP appMargins">
     
     <p>
-
-       
-
        Hey,<span className="strikeThrough">do you know</span> 
        you must have known about <span className="decorateTxt">BodyLanguage</span>, 
        which gets us to know about someone's emotions, feelings, and what they are thinking? 
-       cided to master it, read about it from the internet, watched videos from youtube, or 
+       <br/>
+       I decided to master it, read about it from the internet, watched videos from youtube, or 
        what possible. <span style={{textDecoration:"underline"}}>But there is a difference between REEL and REALITY.</span>  Thus,"I make this to teach-oneself about BodyLanguage." 
-       <br />
+       <br/>
        To check, first, interpret an emoji in mind then click on that emoji 
        to see it's meaning, and you can also enter an emoji to know it's meaning.
-
-       
-
-
     </p>
 {/* */}
     
     </div>
 
-  <div className="common-IO-display common-IO">
+  <div className="appMargins common-IO-display">
 
   <span style={{fontSize:"1rem",marginLeft:".5rem",cursor:"none"}}
     className="common-IO">Enter emoji here to see it's meaning</span>
@@ -110,7 +107,7 @@ export default function App() {
 
   </div>
 
-      <div className="emojis-display"> 
+      <div className="appMargins emojis-display"> 
       {
         gesturesKeys.map((item) => {
           return (
