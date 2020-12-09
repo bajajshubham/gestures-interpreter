@@ -32,10 +32,10 @@ const gesturesDB = {
   "😐":"Neutral",
   "😂":"Tears of Joy",
   "😫":"Tired",
-  "🧎🏽" :"Kneeling",
-  "🤏🏼" :"Pinching Hand",
-  "🧏🏼‍♀️" :"Deaf",
-  "🤟🏽" :"Love-You",
+  // "🧎🏽" :"Kneeling",
+  // "🤏🏼" :"Pinching Hand",
+  // "🧏🏼‍♀️" :"Deaf",
+  // "🤟🏽" :"Love-You",
 }
 
 const gesturesKeys = Object.keys(gesturesDB);
