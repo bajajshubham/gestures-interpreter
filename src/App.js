@@ -19,13 +19,9 @@ const gesturesDB = {
   "👊" : "Oncoming Fist",
   "👉" :"Pointing Right",
   "🤘" :"Sign of the Horns",
-  "🤟c" :"Love-You",
   "🤙" :"Call me Hand",
   "👆" :"Pointing Up",
-  "🤏c" :"Pinching Hand",
-  "🧏c" :"Deaf",
   "🤷‍♂️" :"Shrugging",
-  "🧎c" :"Kneeling",
   "🕴️":"Suit Levitating",
   "😟":"Worried",
   "😯":"Hushed",
@@ -33,10 +29,13 @@ const gesturesDB = {
   "😕":"Confused",
   "😑":"Expressionless",
   "😌":"Relieved",
-  "🥺c":"Begging",
+  "😐":"Neutral",
   "😂":"Tears of Joy",
   "😫":"Tired",
-
+  "🧎c" :"Kneeling",
+  "🤏c" :"Pinching Hand",
+  "🧏c" :"Deaf",
+  "🤟🏽c" :"Love-You",
 }
 
 const gesturesKeys = Object.keys(gesturesDB);
@@ -56,6 +55,7 @@ export default function App() {
         setMeaning(gesturesDB[event.target.value]);
       }
       else{
+        setEmoji("");
         setMeaning("Not having Meaning");
       }
   }
