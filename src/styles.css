@@ -33,7 +33,7 @@ body
   font-size: 1rem;
   background-color: rgba(255, 160, 60, 0.4);
   border: 1px solid rgba(0, 0, 0, 0.8);
- 
+  margin-bottom:1rem;
 }
 
 .strikeThrough
